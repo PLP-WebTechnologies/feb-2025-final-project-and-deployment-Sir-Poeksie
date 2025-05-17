@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.collection{
+	margin: 70px 0;
+}
+
+.col-3{
+	flex-basis: 15%; /* Images will occupy 30% of space */
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img{
+	float: left;
+	width: 300px; /* Autosizes image to this pixel */
+	height: 300px;/* Autosizes image to this pixel */
+	object-fit: cover;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right:25px ;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column{
+	flex: 20%;
+	padding: 0 4px;
+}
+
+.column img{
+	margin-top: 8px;
+	vertical-align: middle;
+}

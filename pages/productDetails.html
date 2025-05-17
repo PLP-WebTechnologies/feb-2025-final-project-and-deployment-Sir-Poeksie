@@ -1,20 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRODUCT | House of Rotunda</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/typography.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/colors.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/product-card.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  </head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- This will make screen adaptable to mobile devices or smaller screen -->
+	<title>Products - House of Rotunda</title>
+	<!------- Stylesheet embedding --------->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Theophilas\Desktop\Websites\Ecommerce Website Template\style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!---- Fonts embed option from Google----->
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500;1,600&family=Dancing+Script&family=Kaushan+Script&family=League+Gothic&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- reference the rating star from link -->
+</head>
 <body>
-  <script src="Scripts/main.js" defer></script>
-  <script src="Scripts/cart.js" defer></script>
-  </body>
+<!------- Header Section --------->
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/HoRlogo.png" width="125px" alt="HoRLogo">
+			</div>
+	<!------------- Nav Bar ------------->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="Products.html">Products</a></li>
+					<li><a href="Collections.html">Shop Collections</a></li>
+					<li><a href="Bespoke.html">Request a Custom</a></li>
+					<li><a href="Referral.html">Refer a Friend</a></li>
+					<li><a href="sizing.html">Size Charts</a></li>
+					<li><a href="FAQs.html">FAQs</li>
+					<li><a href="Shipping.html"><a href="">Shipping</a></li> 
+					<li><a href="Returns.html">Returns</a></li>
+					<li><a href=""><a href="contact.html">Contact Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</nav>
+	<!------------- Checkout Link/Shop --------->
+			<a href="checkout.html">
+				<img src="images/storeicon.png" width="30px" height="30px" alt="cart">
+			</a>
+	<!-- Menu Bar with image -------->
+			<img src="images/menubar.png" alt="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div><!---- Closes Class=Navbar ----->
+	</div><!------ Closes Class=Container ----->
+
+<!--------------------  single product detail ----------------------------->
+
+<div class="small-container single-product">
+	<div class="row">
+		<div class="col-2">
+			<img src="images/protoge.jpg" alt="product" width="100%" id="productImg">
+			<div class="small-img-row">
+				<div class="small-img-col">
+					<img src="images/ProtogeZipfront.jpg" alt="Protogezip" width="100%" class="small-img">
+				</div>
+				
+				<div class="small-img-col">
+					<img src="images/Protogefront.jpg" alt="Protogefront.jpg" width="100%" class="small-img">
+				</div>
+			
+				<div class="small-img-col">
+					<img src="images/protogeback.jpg" alt="ProtogeBack" width="100%" class="small-img">
+				</div>
+
+				<div class="small-img-col">
+					<img src="images/Protogefront.jpg" alt="Protogefront.jpg" width="100%" class="small-img">
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<p>Home / Jeans </p>
+			<h1>Protoge Jean</h1>
+			<h4>ZAR 1400.00</h4>
+			<br>
+			<select>
+				<option>Select Size</option>
+				<option>Custom</option>
+				<option>Small </option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>X-Large</option>
+				<option>XX-Large</option>
+			</select>
+			<input type="number" value="1" >
+			<a href="" class="btn">Add to Cart</a><!-- Add php process-->
+			<h3>Product Details <i class="fa fa-indent"></i></h3>
+			<br>
+			<p>Give your wardrobe a change in Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>	
+</div>
+
+<!------------------- Title -------------------------->
+<div class="small-container">
+	<div class="row row-2">
+		<h2>Related Products</h2>
+		<p>View more</p>
+	</div>
+</div>
+
+
+
+<!--------------- Actual Products------------------>
+
+		<div class="row">
+<!--- 1 ---><div class="col-4">
+				<img src="images/.jpg" alt="Protoge">
+				<h4>Protoge Jean</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>ZAR 1500.00</p>
+			</div>
+		
+<!--- 2 ---><div class="col-4">
+				<img src="images/.jpg" alt="Maester">
+				<h4>Maester Jean</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>ZAR 1000.00</p>
+			</div>
+		<!--------- Product 3 with rating ----------->
+<!--- 4 ---><div class="col-4">
+				<img src="images/.jpg" alt="Sire">
+				<h4>Sire Jean</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>ZAR 750.00</p>
+			</div>
+		<!--------- Product 4 with rating ----------->
+<!--- 5 ---><div class="col-4">
+				<img src="images/.jpg" alt="Hustler">
+				<h4>Hustler Jean</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>ZAR 3500.00</p>
+			</div>
+		</div>
+
+<!---------- Footer -------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and iOS mobile phones</p>
+				<div class="app-logo">
+					<img src="" alt="playstorelogo.png">
+					<img src="" alt="appstorelogo.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="" alt="Company Logo">
+				<p>Our Purpose is To Sustainably make the pleasure and benefits of Style accessible to the many</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3> <!----- Add a div here in css to allign content into flexbox------->
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2022 - Nxazonke Atelier</p>
+	</div>
+</div>
+</div>
+<!----------- JS for Toggle menu ---------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if (MenuItems.style.maxHeight = "0px")
+			{
+				MenuItems.style.maxHeight = "200px"
+			}
+		else
+			{
+				MenuItems.style.maxHeight = "0px"
+			}
+	}
+</script>
+<!---------- JS for product gallery ------------>
+
+<script type="text/javascript">
+	var ProductImg = document.getElementById("productImg");
+	var SmallImg = document.getElementsByClassName("small-img");
+
+	SmallImg[0].onclick = function(){
+		ProductImg.src = SmallImg[0].src;
+	}
+	SmallImg[1].onclick = function(){
+		ProductImg.src = SmallImg[1].src;
+	}
+	SmallImg[2].onclick = function(){
+		ProductImg.src = SmallImg[2].src;
+	}
+	SmallImg[3].onclick = function(){
+		ProductImg.src = SmallImg[3].src;
+	}
+	SmallImg[4].onclick = function(){
+		ProductImg.src = SmallImg[4].src;
+	}
+
+
+</script>
+</body>
 </html>

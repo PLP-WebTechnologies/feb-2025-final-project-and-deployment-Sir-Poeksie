@@ -1,0 +1,768 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Dancing Script', cursive;
+	font-family: 'Kaushan Script', cursive;
+	font-family: 'League Gothic', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	align-content: center;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li{
+
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	color: black;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*  Targets SEASONAL CTA SECTION */
+.row{ 
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{ /* Targets the main things in the col2 div */
+	color: #fff;
+	flex-basis: 50%;
+	min-width: 300px;
+	background: radial-gradient(#fff,#483d8b);
+	background-image: /*url(images/IGDnaTile.jpg)*/;
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+.col-2 p{
+	color: #f5f5f5;
+}
+
+.btn{
+	display: inline-block;
+	background: #483d8b;/* Change this to a different shade of blue */
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+	/* Google html icon code then add forbrt symbols */
+}
+
+.btn:hover{
+background: #4682b4;
+}
+
+/*  Header Container DIV */
+
+.header{
+	background: radial-gradient(#fff,#483d8b);
+}
+.header .row {
+	margin-top: 70px;
+}
+
+/*----------- Featured Collection Section   --------------*/
+
+.collection{
+	margin: 70px 0;
+}
+
+.col-3{
+	flex-basis: 30%; /* Images will occupy 30% of space */
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img{
+	float: left;
+	width: 300px; /* Autosizes image to this pixel */
+	height: 300px;/* Autosizes image to this pixel */
+	object-fit: cover;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right:25px ;
+}
+
+/*--------- FEATURED PRODUCTS SECTION -------------*/
+
+.col-4{ /*--- HANDLES GRAPHICS WITHIN PRODUCTS WITH RATING----*/
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s; /*This will affect images to move in y direction*/
+}
+
+
+.col-4 img{
+	width: 100%;
+	
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555S;
+}
+
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.h4{
+	color: #555;
+	font-weight: normal;
+
+}
+
+.col-4 p{
+	font-size: 14px;
+}
+
+.rating .fa{
+	color: black;
+}
+
+col-4:hover{
+	transform: translateY(-5px);
+}
+
+/*-------------OFFER-------------*/
+.offer{
+	background: radial-gradient(#fff, #ffd6d6);
+	margin-top: 80px;
+	padding: 30px 0;
+}
+
+.col-2 .offer-img{
+	padding: 50px;
+
+}
+
+small{
+	color: #555;
+}
+
+/**** Testimonial *******/
+
+.testimonial{
+	padding-top: 100px;
+}
+
+.testimonial .col-3{
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+	width: 50px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+	transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+	font-size: 34px;
+	color: #ff523b;
+}
+
+.col-3 p{
+
+	font-size: 12px;
+	margin: 12px 0;
+	color: #777 ;
+}
+
+.testimonial .col-3 h3{
+	font-weight: 600;
+	color: #555;
+	font-size: 16px;
+
+}
+
+/*--------- Brands --------------*/
+
+.brands{
+	margin: 100px auto;
+}
+
+.col-5{
+	width: 160px;
+}
+
+.col-5 img{
+	width: 100%;
+	cursor: pointer; /* This makes the mouse appear as a pointer when hovering over content, in this case img */
+	filter: grayscale(100%); /* Changes color of content to grey/ black & white */
+}
+
+.col-5 img:hover{ /* This will turn the content into color when hovered over with mouse */
+	filter: grayscale(0);
+}
+
+/*-----------Footer----------*/
+
+.footer{
+	background: #483d8b;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+
+}
+
+.footer p{
+	color: #8a8a8a;
+}
+
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-1{
+	flex-basis: 30%;
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+
+.footer-col-2 img{
+	width: 180px;
+	,margin-bottom: 20px;
+}
+
+.footer-col-3,{
+	flex-basis: 15%;
+	text-align: center;
+}
+
+.footer-col-4{
+	flex-basis: 15%;
+	text-align: center;
+}
+
+.footer-col-4 ul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50px, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	color: #fff;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.app-logo{
+	margin-top: 20px;
+}
+
+.app-logo img{
+	width: 140px;
+}
+
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.copyright{
+	text-align: center;
+}
+
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+
+}
+
+/*----Media Query for menu icon to be responsive ina smaller screen---------*/
+@media only screen  and (max-width: 800px){
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color: #fff;
+
+	}
+
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/*------------- Products.html CSS ---------*/
+
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}
+
+select{
+	border: 1px solid #ff523b;
+	padding: 5px;
+}
+
+select:focus{
+	outline: none;
+}
+
+.page-btn{
+	margin: 0 auto 80px;
+}
+
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #ff523b;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+
+}
+
+.page-btn span:hover{
+	background: #ff523b;
+	color: #fff;
+}
+
+
+/*----------- Single Product Details -----------*/
+
+.single-product{
+	margin-top: 80px;
+
+}
+
+.single-product .col-2 img{
+	padding: 0;
+}
+
+.single-product .col-2 img{
+	padding: 20px;
+}
+
+.single-product h4{
+	margin: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+
+}
+
+.single-product select{
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.single-product input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-right: 10px;
+	border: 1px solid #ff523b;
+}
+
+input:focus{
+	outline: none;
+}
+
+.single-product .fa{
+	color: #ff523b;
+	margin-left: 10px;
+}
+
+.small-img-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.small-img-col{
+	flex-basis: 24%;
+	cursor: pointer;
+	width: 300px; /* Autosizes image to this pixel */
+	height: 300px;/* Autosizes image to this pixel */
+}
+
+/*-------- Cart.html CSS    --------------*/
+
+/*----------- Cart Items -----------------*/
+
+.cartPage{
+	margin: 80px auto;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cartInfo{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+th{
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	background: #4b0082;
+	font-weight: normal;
+}
+
+td{
+	padding: 10px 5px;
+
+}
+
+td input{
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+
+}
+
+td a{
+	color: #ff523b;
+	font-size: 12px;
+}
+
+
+td img{
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+
+}
+
+.total-price{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.total-price table{
+	border-top: 3px solid #4b0082;
+	width: 100%;
+	max-width: 400px;
+}
+
+td:last-child{
+	text-align: right;
+}
+
+th:last-child{
+	text-align: right;
+}
+
+/*---------- ACCOUNT.HTML----------------*/
+
+.account-page{
+	padding: 50px 0;
+	background: radial-gradient(#4b0082,#fffff0);
+}
+
+.form-container{
+	background: #fff;
+	color: black;
+	width: 300px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0);
+}
+
+.form-container span{
+	font-weight: bold;
+	padding: 0 10px;
+	color: #555;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+
+}
+
+.form-btn{
+	display: inline-block;
+}
+
+.form-container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+
+}
+
+form input{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+}
+
+form .btn{
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	margin: 10px 0;
+}
+
+form .btn:focus{
+	outline: none;
+}
+
+#LoginForm{
+	left: -300px;
+}
+
+#RegForm{
+	left: 0;
+}
+
+
+
+/* media query for less than  600 screen size */
+@media only screen  and (max-width: 600px){
+	
+	.row{
+		text-align: center;
+	}
+
+	.col-2, .col-3, .col-4{
+		flex-basis: 100%;
+	}
+	.single-product .row{
+		text-align: left;
+	}
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+	.single-product h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
+	.cartInfo p{
+		display: none;
+	}
+}
+
+/*---------- ACCOUNT.HTML----------------*/
+
+.account-page{
+	padding: 50px 0;
+	background: radial-gradient(#4b0082,#fffff0);
+}
+
+.form-container{
+	background: #fff;
+	color: black;
+	width: 300px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0);
+	overflow: hidden;
+}
+
+.form-container span{
+	font-weight: bold;
+	padding: 0 10px;
+	color: #555;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+
+}
+
+.form-btn{
+	display: inline-block;
+}
+
+.form-container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+	transition: transform 1s;
+
+}
+
+form input{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+}
+
+form .btn{
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	margin: 10px 0;
+}
+
+form .btn:focus{
+	outline: none;
+}
+
+#LoginForm{
+	left: -300px;
+}
+
+#RegForm{
+	left: 0;
+}
+
+form a{
+	font-size: 12px;
+}
+
+#Indicator{
+	width: 100px;
+	border: none;
+	background: #4b0082;
+	height: 3px;
+	margin-top: 8px;
+	transform: translateX(100px);
+	transition: transform 1s;
+}
+
+
+/*
+League Gothic Font 
+font-family: 'League Gothic', sans-serif;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+Dancing Script
+font-family: 'Dancing Script', cursive;
+font-family: 'League Gothic', sans-serif;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Gothic&display=swap" rel="stylesheet">
+
+Nanum Myeongjo
+font-family: 'Dancing Script', cursive;
+font-family: 'League Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+KAUSHAN SCRIPT
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'League Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=League+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+*/
+/*.col-2 img{
+	background-image: inherit;
+	/*max-width: 100%;
+	padding: 50px 0;*/

@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- This will make screen adaptable to mobile devices or smaller screen -->
 	<title>Products - House of Rotunda</title>
 	<!------- Stylesheet embedding --------->
-	<link rel="stylesheet" type="text/css" href="C:\Users\Theophilas\Desktop\Websites\Ecommerce Website Template\style.css">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<link rel="script" type="text/javascript" href="/respoke.js">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!---- Fonts embed option from Google----->
@@ -14,52 +15,52 @@
 </head>
 <body>
 <!------- Header Section --------->
-	<div class="container">
-		<div class="navbar">
-			<div class="logo">
-				<img src="images/HoRlogo.png" width="125px" alt="HoRLogo">
-			</div>
-	<!------------- Nav Bar ------------->
-			<nav>
-				<ul id="MenuItems">
-					<li><a href="Products.html">Products</a></li>
-					<li><a href="Collections.html">Shop Collections</a></li>
-					<li><a href="Bespoke.html">Request a Custom</a></li>
-					<li><a href="Referral.html">Refer a Friend</a></li>
-					<li><a href="sizing.html">Size Charts</a></li>
-					<li><a href="FAQs.html">FAQs</li>
-					<li><a href="Shipping.html"><a href="">Shipping</a></li> 
-					<li><a href="Returns.html">Returns</a></li>
-					<li><a href=""><a href="contact.html">Contact Us</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-	<!------------- Checkout Link/Shop --------->
-			<a href="checkout.html">
-				<img src="images/storeicon.png" width="30px" height="30px" alt="cart">
-			</a>
-	<!-- Menu Bar with image -------->
-			<img src="images/menubar.png" alt="menu.png" class="menu-icon" onclick="menutoggle()">
-		</div><!---- Closes Class=Navbar ----->
-	</div><!------ Closes Class=Container ----->
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="/index.html"><img src="images/HoRlogo.png" width="125px" alt="HoRLogo"></a>
+				</div>
+		<!------------- Nav Bar ------------->
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="/pages/products.html">Products</a></li>
+						<li><a href="/pages/bespoke.html">Request a Custom</a></li>
+						<li><a href="/pages/sizing.html">Size Charts</a></li>
+						<li><a href="/pages/FAQs.html">FAQs</li>
+						<li><a href="/pages/shipping.html">Shipping</a></li> 
+						<li><a href="/pages/returns.html">Returns</a></li>
+						<li><a href="/pages/lookbook.html">Lookbook</a></li>
+						<li><a href="/pages/contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+		<!------------- Checkout Link/Shop --------->
+				<a href="cart.html">
+					<img src="images/storeicon.png" width="30px" height="30px" alt="cart">
+				</a>
+		<!-- Menu Bar with image -------->
+				<img src="images/menubar.png" alt="menu.png" class="menu-icon" onclick="menutoggle()">
+			</div><!---- Closes Class=Navbar ----->
+		</div><!------ Closes Class=Container ----->
+	</div><!------- Closes Class=header -------->
 
 <!--------------------  single product detail ----------------------------->
 
 <div class="small-container single-product">
 	<div class="row">
 		<div class="col-2">
-			<img src="images/protoge.jpg" alt="product" width="100%" id="productImg">
+			<img src="/images/protogeCard.jpg" alt="product" width="100%" id="productImg">
 			<div class="small-img-row">
 				<div class="small-img-col">
-					<img src="images/ProtogeZipfront.jpg" alt="Protogezip" width="100%" class="small-img">
+					<img src="/images/ProtogeZip Front.jpg" alt="Protogezip" width="100%" class="small-img">
 				</div>
 				
 				<div class="small-img-col">
-					<img src="images/Protogefront.jpg" alt="Protogefront.jpg" width="100%" class="small-img">
+					<img src="/images/protogeCard.jpg" alt="Protogefront.jpg" width="100%" class="small-img">
 				</div>
 			
 				<div class="small-img-col">
-					<img src="images/protogeback.jpg" alt="ProtogeBack" width="100%" class="small-img">
+					<img src="/images/ProtogeBack.jpg" alt="ProtogeBack" width="100%" class="small-img">
 				</div>
 
 				<div class="small-img-col">
@@ -103,13 +104,11 @@
 	</div>
 </div>
 
-
-
 <!--------------- Actual Products------------------>
 
 		<div class="row">
 <!--- 1 ---><div class="col-4">
-				<img src="images/.jpg" alt="Protoge">
+				<img src="/images/masesterFull.jpg" alt="Maester">
 				<h4>Protoge Jean</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -123,7 +122,7 @@
 			</div>
 		
 <!--- 2 ---><div class="col-4">
-				<img src="images/.jpg" alt="Maester">
+				<img src="/images/dnaRomper.jpg" alt="Maester">
 				<h4>Maester Jean</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -137,7 +136,7 @@
 			</div>
 		<!--------- Product 3 with rating ----------->
 <!--- 4 ---><div class="col-4">
-				<img src="images/.jpg" alt="Sire">
+				<img src="/images/dutyDenim.jpg" alt="Sire">
 				<h4>Sire Jean</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -178,7 +177,7 @@
 				</div>
 			</div>
 			<div class="footer-col-2">
-				<img src="" alt="Company Logo">
+				<img src="/images/HoRLogo.png" alt="Company Logo">
 				<p>Our Purpose is To Sustainably make the pleasure and benefits of Style accessible to the many</p>
 			</div>
 			<div class="footer-col-3">
